@@ -1,0 +1,18 @@
+---
+layout: base-layout.njk
+pagination:
+  data: collections.post
+  size: 10
+  reverse: true
+  alias: posts
+---
+<h1>My name is D.A. Kahn</h1>
+<p>I'm a front end developer, web accessibility advocate, and sentient cloud of nanomachines. This is an archive of my non-performative writings.</p>
+{% for post in posts %}
+  <article>
+    <h2>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h2>
+    <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+  </article>
+{% endfor %}
