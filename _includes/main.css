@@ -84,6 +84,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 2rem;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 1.25rem;
 }
 
 header {
@@ -114,27 +117,26 @@ a:focus {
 
 a:hover {
   border-bottom: none;
-  background: #fff;
+  background: #c7ff00;
   color: #000;
 }
 
 a:active {
-  background: #265301;
+  background: #c7ff00;
   color: #cdfeaa;
-}
-
-.logo {
-  font-size: 4rem;
-  margin-left: -0.75rem;
 }
 
 .site-name {
   align-self: center;
-  font-size: 1.25rem;
+  font-size: 2.25rem;
+}
+
+.name {
+  color: #c7ff00;
 }
 
 .intro-paragraph {
-  margin-bottom: 1rem;
+  margin: 1.5rem 0rem;
 }
 
 .article-title {
