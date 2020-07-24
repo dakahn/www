@@ -3,7 +3,7 @@
 <head> 
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <title>Eleventy Blog</title> 
+  <title>D.A. KAHN DOT ZONE</title> 
   {% set css %}
     {% include "main.css" %}
   {% endset %}
@@ -12,6 +12,10 @@
   </style>
 </head> 
 <body> 
+  <header>
+   <span aria-hidden="true" class="logo">&#9996;</span> 
+   <a href="/"></a><h1 class="site-name">This is the website of D.A. Kahn</h1></a>
+  </header>
   <main> 
     {{ content | safe }}
   </main> 

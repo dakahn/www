@@ -6,11 +6,11 @@ pagination:
   reverse: true
   alias: posts
 ---
-<h1>My name is D.A. Kahn</h1>
-<p>I'm a front end developer, web accessibility advocate, and sentient cloud of nanomachines. This is an archive of my non-performative writings.</p>
+<p class="intro-paragraph">I'm a front end developer, web accessibility advocate, and sentient cloud of nanomachines.</p>
+<p class="intro-paragraph">This is an archive of my non-performative writing. Stuff I want to remember and maybe share with other people.</p>
 {% for post in posts %}
   <article>
-    <h2>
+    <h2 class="article-title">
       <a href="{{ post.url | url }}">{{ post.data.title }}</a>
     </h2>
     <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
