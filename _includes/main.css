@@ -77,29 +77,25 @@ select {
   }
 }
 
+html {
+  font-size: 18px;
+  display: flex;
+}
+
 body {
   background-color: #000;
   color: #fff;
-  font-family: sans-serif;
-  display: flex;
+  font-family: "IBM Plex Sans", sans-serif;
   flex-direction: column;
-  margin: 2rem;
+  margin: 1rem;
   height: 100%;
   overflow-x: hidden;
-  font-size: 1.25rem;
-}
-
-header {
-  display: flex;
-}
-
-main {
 }
 
 a {
-  outline: none;
+  border-bottom: 1px solid;
   text-decoration: none;
-  padding: 2px 1px 0;
+  padding: 0.25rem 0;
 }
 
 a:link {
@@ -112,7 +108,8 @@ a:visited {
 
 a:focus {
   border-bottom: none;
-  background: #000;
+  background: #c7ff00;
+  color: #000;
 }
 
 a:hover {
@@ -126,19 +123,49 @@ a:active {
   color: #cdfeaa;
 }
 
-.site-name {
-  align-self: center;
-  font-size: 2.25rem;
+h1 {
+  font-weight: normal;
 }
 
-.name {
-  color: #c7ff00;
+.site-name {
+  align-self: center;
+  font-size: 1.75rem;
 }
 
 .intro-paragraph {
-  margin: 1.5rem 0rem;
+  margin: 2rem 0rem;
+  font-size: 1rem;
 }
 
 .article-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.h1-article-title {
+  margin-top: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.site-name-article {
+  align-self: center;
+  font-size: 1.75rem;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.skip-link {
+  padding: 0;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    max-width: 65%;
+    margin: 2rem;
+  }
 }

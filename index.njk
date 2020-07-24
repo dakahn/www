@@ -1,16 +1,37 @@
 ---
-layout: base-layout.njk
 pagination:
   data: collections.post
   size: 10
   reverse: true
   alias: posts
 ---
-<p class="intro-paragraph">I'm a front end developer and web accessibility advocate. This is an archive of my non-performative writing. Stuff I want to remember and maybe share with other people.</p>
-{% for post in posts %}
-  <article>
-    <h2 class="article-title">
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h2>
-  </article>
-{% endfor %}
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>This is the website of D.A. Kahn</title> 
+  {% set css %}
+    {% include "main.css" %}
+  {% endset %}
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head> 
+<body> 
+  <main> 
+    <header>
+      <h1 class="site-name">I'm D.A. Kahn <span class="italic">and this is my website</span></h1>
+    </header>
+    <p class="intro-paragraph">I'm a front end developer and web accessibility advocate. This is an archive of my non-performative writing. Stuff I want to remember and maybe share with other people.</p>
+    {% for post in posts %}
+      <article>
+        <h2 class="article-title">
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h2>
+      </article>
+    {% endfor %}
+  </main> 
+</body> 
+</html>
