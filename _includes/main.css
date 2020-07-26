@@ -133,6 +133,10 @@ h1 {
   font-weight: normal;
 }
 
+form {
+  margin-top: 1rem;
+}
+
 .site-name {
   align-self: center;
   font-size: 1.75rem;
