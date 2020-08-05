@@ -89,8 +89,12 @@ body {
   color: #fff;
   font-family: "Plex", system-ui;
   flex-direction: column;
-  margin: 2rem;
+  margin: 3rem 2rem 0rem 1rem;
   min-height: 100%;
+  padding-left: 1rem;
+  padding-bottom: 6rem;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 a {
@@ -108,17 +112,19 @@ a:visited {
 
 a:focus {
   border-bottom: none;
-  outline: 2px dashed #fff;
+  outline: 3px solid #fff;
   border: 0px solid #000;
 }
 
 a:hover {
   border-bottom: none;
-  outline: 2px dashed #fff;
+  outline: 3px solid #fff;
   border: 0px solid #000;
 }
 
 a:active {
+  border-bottom: none;
+  outline: 3px solid #fff;
   border: 0px solid #000;
 }
 
@@ -147,15 +153,18 @@ h1 {
 
 .site-name {
   align-self: center;
-  font-size: 2rem;
+  color: black;
+  font-size: 4rem;
   font-weight: 900;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .site-name-article {
   align-self: center;
-  font-size: 1.75rem;
-  border-bottom: 1px solid;
-  text-decoration: none;
+  font-size: 4rem;
+  color: black!important;
+  border-bottom: 1px solid white;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   margin-top: 0.25rem;
   font-weight: 900;
 }
@@ -174,20 +183,19 @@ h1 {
 
 .search-textbox {
   background: #000;
-  outline: 2px dashed #000;
+  outline: 3px solid #000;
   border: 1px solid #fff;
   color: #fff;
 }
 
 .search-textbox:focus {
-  outline: 2px dashed #fff;
+  outline: 3px solid #fff;
   border: 1px solid #000;
 }
 
 .search-button {
   background: #fff;
-  outline: 2px solid #000;
-  border: 1px solid #000;
+  border: none;
   padding: 0.1rem .75rem;
   margin-top: .5rem;
 }
@@ -195,22 +203,24 @@ h1 {
 .search-button:hover {
   background: #000;
   color: #fff;
-  font-weight: bolder;
-  outline: 2px dashed #fff;
-  border: 1px solid #000;
+  outline: 3px solid #fff;
+  border: none;
 }
 
 .search-button:focus {
   background: #000;
   color: #fff;
-  font-weight: bolder;
-  outline: 2px dashed #fff;
-  border: 1px solid #000;
+  outline: 3px solid #fff;
+  border: none;
 }
 
-@media only screen and (min-width: 666px) {
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+
   body {
-    margin: 3rem 6rem;
+    margin: 3rem 12rem 0rem 11rem;
   }
 
   header {
@@ -222,14 +232,6 @@ h1 {
   .search-button {
     margin-top: 0rem;
     margin-left: .25rem;
-  }
-
-  .search-button:hover {
-    border: none;
-  }
-
-  .search-button:focus {
-    border: none;
   }
 
   .search-textbox {
