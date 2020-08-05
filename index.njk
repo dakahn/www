@@ -5,38 +5,41 @@ pagination:
   reverse: true
   alias: posts
 ---
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-  <meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <title>This is the website of David Alxander Kahn</title> 
-  {% set css %}
-    {% include "reset.css" %}
-    {% include "main.css" %}
-  {% endset %}
-  <style>
-    {{ css | cssmin | safe }}
-  </style>
-</head> 
-<body> 
-  <main> 
-    <header>
-      <h1 class="site-name">D.A. Kahn</h1>
-      <form action="https://duckduckgo.com/">
-        <input class="search-textbox" type="text" name="q">
-        <input type="hidden" name="sites" value="https://dakahn.zone/">
-        <button class="search-button" type="submit">Search</button>
-      </form>
-    </header>
-    <p class="intro-paragraph">I'm a front end developer and web accessibility advocate. This is an archive of my non-performative writing. Stuff I want to remember and maybe share with other people.</p>
-    {% for post in posts %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>This is the website of David Alxander Kahn</title>
+    {% set css %} {% include "reset.css" %} {% include "main.css" %} {% endset
+    %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="site-name">D.A. Kahn</h1>
+        <form action="https://duckduckgo.com/">
+          <input class="search-textbox" type="text" name="q" />
+          <input type="hidden" name="sites" value="https://dakahn.zone/" />
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </header>
+      <p class="intro-paragraph">
+        I'm a front end developer and web accessibility advocate. This is an
+        archive of my non-performative writing. Stuff I want to remember and
+        maybe share with other people.
+      </p>
+      {% for post in posts %}
       <article>
         <h2 class="article-title">
           <a href="{{ post.url | url }}">{{ post.data.title }}</a>
         </h2>
       </article>
-    {% endfor %}
-  </main> 
-</body> 
+      {% endfor %}
+    </main>
+  </body>
 </html>

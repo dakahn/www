@@ -7,14 +7,14 @@ tags: ["post"]
 
 This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code. This is a fake paragraph describing some code.
 
-``` js
+```js
 class CommentList extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.state = {
       // "DataSource" is some global data source
-      comments: DataSource.getComments()
+      comments: DataSource.getComments(),
     };
   }
 
@@ -31,7 +31,7 @@ class CommentList extends React.Component {
   handleChange() {
     // Update component state whenever the data source changes
     this.setState({
-      comments: DataSource.getComments()
+      comments: DataSource.getComments(),
     });
   }
 

@@ -86,7 +86,7 @@ h1 {
 .site-name-article {
   align-self: center;
   font-size: 3rem;
-  color: black!important;
+  color: black !important;
   border-bottom: 1px solid white;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   margin-top: 0.25rem;
@@ -110,7 +110,7 @@ h1 {
   outline: 3px solid #000;
   border: 1px solid #fff;
   color: #fff;
-  padding-left: .25rem;
+  padding-left: 0.25rem;
   width: 11rem;
 }
 
@@ -122,8 +122,8 @@ h1 {
 .search-button {
   background: #fff;
   border: none;
-  padding: 0.1rem .75rem;
-  margin-top: .5rem;
+  padding: 0.1rem 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .search-button:hover {
@@ -160,11 +160,10 @@ h1 {
 
   .search-button {
     margin-top: 0rem;
-    margin-left: .25rem;
+    margin-left: 0.25rem;
   }
 
   .search-textbox {
     margin-top: 0rem;
   }
 }
-

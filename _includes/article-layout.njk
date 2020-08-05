@@ -1,27 +1,24 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-  <meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <title>This is the website of D.A. Kahn</title> 
-  {% set css %}
-    {% include "reset.css" %}
-    {% include "main.css" %}
-    {% include "prism.css" %}
-  {% endset %}
-  <style>
-    {{ css | cssmin | safe }}
-  </style>
-</head> 
-<body> 
-  <a href="#main-content" class="skip-link">Skip to article</a>
-  <header>
-    <a href="/" class="site-name-article">D.A. Kahn</a>
-  </header>
-  <article role="main" id="main-content">
-    <h1 class="h1-article-title">{{ title }}</h1> 
-    <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time> 
-    {{ content | safe }}
-  </article>
-</body> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>This is the website of D.A. Kahn</title>
+    {% set css %} {% include "reset.css" %} {% include "main.css" %} {% include
+    "prism.css" %} {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to article</a>
+    <header>
+      <a href="/" class="site-name-article">D.A. Kahn</a>
+    </header>
+    <article role="main" id="main-content">
+      <h1 class="h1-article-title">{{ title }}</h1>
+      <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+      {{ content | safe }}
+    </article>
+  </body>
 </html>
