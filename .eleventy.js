@@ -1,5 +1,6 @@
 const moment = require("moment");
 const CleanCSS = require("clean-css");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 moment.locale("en");
 
@@ -16,4 +17,5 @@ module.exports = function (eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
   eleventyConfig.addPassthroughCopy("assets/fonts");
+  eleventyConfig.addPlugin(syntaxHighlight);
 };

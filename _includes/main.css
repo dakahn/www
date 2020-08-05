@@ -133,6 +133,10 @@ h1 {
   margin-left: -3px;
 }
 
+code {
+  font-size: .75rem!important;
+}
+
 .intro-paragraph {
   margin: 2rem 0rem;
   font-size: 1rem;
@@ -241,3 +245,4 @@ h1 {
     margin-top: 0rem;
   }
 }
+
