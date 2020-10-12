@@ -59,6 +59,7 @@ h1 {
 .intro-paragraph {
   margin: 2rem 0rem;
   font-size: 1rem;
+  font-style: italic;
 }
 
 .article-title {
