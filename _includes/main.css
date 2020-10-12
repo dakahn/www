@@ -57,6 +57,8 @@ h1 {
 }
 
 .intro-paragraph {
+  border-left: 1px solid white;
+  padding-left: 0.8rem;
   margin: 2rem 0rem;
   font-size: 1rem;
   font-style: italic;
