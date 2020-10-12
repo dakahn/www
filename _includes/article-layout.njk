@@ -13,11 +13,11 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to article</a>
     <header>
-      <a href="/" class="site-name-article">D.A. Kahn</a>
+      <a href="/" class="site-name-article">@dakahn</a>
     </header>
     <article role="main" id="main-content">
       <h1 class="h1-article-title">{{ title }}</h1>
-      <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+      <time id="time" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
       {{ content | safe }}
     </article>
   </body>
