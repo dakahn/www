@@ -3,18 +3,12 @@
  * Based on the a11y-dark theme by @author ericwbailey
  */
 
-@font-face {
-  font-family: "Gintronic";
-  src: url("/assets/fonts/Gintronic-Regular.woff2") format("woff2"),
-    url("/assets/fonts/Gintronic-Regular.woff") format("woff");
-}
-
 code[class*="language-"],
 pre[class*="language-"] {
   color: #f8f8f2;
   background: none;
-  font-family: "Gintronic", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
-    monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: left;
   white-space: pre;
   word-spacing: normal;
