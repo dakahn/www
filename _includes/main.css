@@ -1,7 +1,9 @@
 :root {
   --background: #29292c;
+  --alt-background: #76d4d6;
   --body-text: #d7d7d7;
   --link-text: #76d4d6;
+  --visited-link-text: #a9a9a9;
   --heading: #76d4d6;
   --aux-text: #d5acd5;
 }
@@ -25,45 +27,36 @@ body {
 }
 
 a {
-  font-size: 1.25rem;
   border-bottom: 1px solid;
   text-decoration: none;
+  color: var(--link-text);
 }
 
 a:link {
   color: var(--link-text);
 }
 
-a:visited {
-  /* change this */
-  color: var(--link-text);
-}
-
 a:focus {
   border-bottom: none;
-  background-color: var(--link-text);
+  background-color: var(--alt-background);
   color: var(--background);
 }
 
 a:hover {
   border-bottom: none;
-  background-color: var(--link-text);
+  background-color: var(--alt-background);
   color: var(--background);
 }
 
 a:active {
   border-bottom: none;
-  background-color: var(--link-text);
+  background-color: var(--alt-background);
   color: black;
 }
 
 h1 {
   font-weight: normal;
   margin-left: -3px;
-}
-
-p {
-  line-height: 1.6rem;
 }
 
 .intro-paragraph {
@@ -76,6 +69,7 @@ p {
 .article-title {
   font-size: 1rem;
   margin-bottom: 1rem;
+  font-weight: normal;
 }
 
 .h1-article-title {
@@ -99,26 +93,19 @@ time {
 }
 
 .site-name-article {
-  align-self: center;
-  font-size: 3rem;
   margin-top: 0.25rem;
-  color: var(--heading) !important;
 }
 
 .site-name-article:hover {
   border-bottom: 1px solid #000;
   color: var(--background) !important;
-  background-color: var(--heading);
+  background-color: var(--alt-background);
 }
 
 .site-name-article:focus {
   border-bottom: 1px solid #000;
   color: var(--background) !important;
-  background-color: var(--heading);
-}
-
-.skip-link {
-  font-size: 0.75rem;
+  background-color: var(--alt-background);
 }
 
 @media only screen and (min-width: 800px) {
@@ -136,5 +123,6 @@ time {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
   }
 }
