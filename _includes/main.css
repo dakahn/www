@@ -52,9 +52,7 @@ h1 {
 }
 
 .intro-paragraph {
-  border-left: 1px solid white;
-  padding-left: 0.8rem;
-  margin: 2rem 0rem;
+  margin: 2rem 0rem 4rem 0;
   font-size: 1rem;
   font-style: italic;
 }
@@ -81,7 +79,6 @@ h1 {
   align-self: center;
   color: white;
   font-size: 3rem;
-  font-weight: 900;
 }
 
 .site-name-article {
@@ -89,7 +86,6 @@ h1 {
   font-size: 3rem;
   color: white;
   margin-top: 0.25rem;
-  font-weight: 900;
 }
 
 .site-name-article:hover {
