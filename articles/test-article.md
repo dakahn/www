@@ -17,7 +17,7 @@ I'll alert the crew. Mr. Crusher, ready a collision course with the Borg ship. C
 ```
 
 ```html
-<label for="ex1-input" id="ex1-label" class="combobox-label">
+<label for="ex1-input" id="ex1-label">
   Choice 1 Fruit or Vegetable
 </label>
 <div class="combobox-wrapper">
