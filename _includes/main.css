@@ -1,9 +1,9 @@
 :root {
-  --background: #000000;
-  --body-text: #a9aaaa;
-  --link-text: #d598b5;
-  --site-name: #d598b5;
-  --aux-text: #d598b5;
+  --background: #29292c;
+  --body-text: #d7d7d7;
+  --link-text: #76d4d6;
+  --heading: #76d4d6;
+  --aux-text: #d5acd5;
 }
 
 html {
@@ -94,7 +94,7 @@ time {
 
 .site-name {
   align-self: center;
-  color: var(--site-name);
+  color: var(--heading);
   font-size: 3rem;
 }
 
@@ -102,19 +102,19 @@ time {
   align-self: center;
   font-size: 3rem;
   margin-top: 0.25rem;
-  color: var(--site-name) !important;
+  color: var(--heading) !important;
 }
 
 .site-name-article:hover {
   border-bottom: 1px solid #000;
   color: var(--background) !important;
-  background-color: var(--site-name);
+  background-color: var(--heading);
 }
 
 .site-name-article:focus {
   border-bottom: 1px solid #000;
   color: var(--background) !important;
-  background-color: var(--site-name);
+  background-color: var(--heading);
 }
 
 .skip-link {
