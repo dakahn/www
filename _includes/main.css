@@ -1,14 +1,23 @@
+:root {
+  --background: #000000;
+  --body-text: #a9aaaa;
+  --link-text: #d598b5;
+  --site-name: #d598b5;
+  --aux-text: #d598b5;
+}
+
 html {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
 }
 
 body {
   min-height: 100vh;
-  background-color: #000;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--background);
+  color: var(--body-text);
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   flex-direction: column;
   margin: 1rem 2rem 0rem 1rem;
   min-height: 100%;
@@ -16,33 +25,35 @@ body {
 }
 
 a {
+  font-size: 1.25rem;
   border-bottom: 1px solid;
   text-decoration: none;
 }
 
 a:link {
-  color: #fff;
+  color: var(--link-text);
 }
 
 a:visited {
-  color: #fff;
+  /* change this */
+  color: var(--link-text);
 }
 
 a:focus {
   border-bottom: none;
-  background-color: white;
-  color: black;
+  background-color: var(--link-text);
+  color: var(--background);
 }
 
 a:hover {
   border-bottom: none;
-  background-color: white;
-  color: black;
+  background-color: var(--link-text);
+  color: var(--background);
 }
 
 a:active {
   border-bottom: none;
-  background-color: white;
+  background-color: var(--link-text);
   color: black;
 }
 
@@ -51,10 +62,15 @@ h1 {
   margin-left: -3px;
 }
 
+p {
+  line-height: 1.6rem;
+}
+
 .intro-paragraph {
-  margin: 2rem 0rem 4rem 0;
+  border-left: 1px solid white;
+  padding-left: 0.8rem;
+  margin: 2rem 0rem;
   font-size: 1rem;
-  font-style: italic;
 }
 
 .article-title {
@@ -70,30 +86,35 @@ h1 {
   font-style: italic;
 }
 
-#time {
+time {
   font-size: 0.8rem;
   font-style: italic;
+  color: var(--aux-text);
 }
 
 .site-name {
   align-self: center;
-  color: white;
+  color: var(--site-name);
   font-size: 3rem;
 }
 
 .site-name-article {
   align-self: center;
   font-size: 3rem;
-  color: white;
   margin-top: 0.25rem;
+  color: var(--site-name) !important;
 }
 
 .site-name-article:hover {
   border-bottom: 1px solid #000;
+  color: var(--background) !important;
+  background-color: var(--site-name);
 }
 
 .site-name-article:focus {
   border-bottom: 1px solid #000;
+  color: var(--background) !important;
+  background-color: var(--site-name);
 }
 
 .skip-link {
