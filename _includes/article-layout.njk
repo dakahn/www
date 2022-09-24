@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head id="#top">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>This is the website of D.A. Kahn</title>
@@ -20,5 +20,6 @@
       <time id="time" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
       {{ content | safe }}
     </article>
+    <a href="#top" class="skip-link to-top">Back to top</a>
   </body>
 </html>
