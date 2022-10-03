@@ -4,12 +4,12 @@
  */
 
 :root {
-  --background: #292929;
-  --base: #a6a6a6;
-  --alt-base: #d7d7d7;
-  --element: #d5acd5;
-  --attribute: #76d4d6;
-  --value: #f78c8c;
+  /* --code-background: #488a8a; */
+  --base: #fbf5f3;
+  --alt-base: #fbf5f3;
+  --element: #fbf5f3;
+  --attribute: #fbf5f3;
+  --value: #fbf5f3;
 }
 
 code[class*="language-"],
@@ -46,7 +46,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--background);
+  background: var(--code-background);
 }
 
 /* Inline code */
