@@ -1,10 +1,11 @@
 :root {
-  --background: #29292c;
-  --alt-background: #76d4d6;
-  --body-text: #d7d7d7;
-  --link-text: #76d4d6;
-  --visited-link-text: #a9a9a9;
-  --heading: #76d4d6;
+  --background: #e03030;
+  --alt-background: #000000;
+  --body-text: #ffffff;
+  --link-text: #ffffff;
+  --article-title: #000000;
+  --visited-link-text: #ffffff;
+  --heading: #c1c1c1;
   --aux-text: #d5acd5;
 }
 
@@ -27,8 +28,7 @@ body {
 }
 
 a {
-  border-bottom: 1px solid;
-  text-decoration: none;
+  padding-top: 3px;
   color: var(--link-text);
 }
 
@@ -37,15 +37,16 @@ a:link {
 }
 
 a:focus {
-  border-bottom: none;
   background-color: var(--alt-background);
-  color: var(--background);
+  text-decoration: none;
+  outline: none;
+  color: var(--body-text);
 }
 
 a:hover {
-  border-bottom: none;
   background-color: var(--alt-background);
-  color: var(--background);
+  text-decoration: none;
+  color: var(--body-text);
 }
 
 a:active {
@@ -54,22 +55,31 @@ a:active {
   color: black;
 }
 
-h1 {
-  font-weight: normal;
-  margin-left: -3px;
-}
-
 .intro-paragraph {
-  border-left: 1px solid white;
-  padding-left: 0.8rem;
-  margin: 2rem 0rem;
-  font-size: 1rem;
+  font-weight: 800;
+  margin: 0rem 0rem 1rem 0rem;
+  font-size: 0.80em;
 }
 
-.article-title {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-weight: normal;
+.article-title a {
+  padding-top: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: var(--article-title);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.article-title a:hover {
+  background-color: var(--alt-background);
+  color: var(--body-text);
+}
+
+.article-title a:focus {
+  background-color: var(--alt-background);
+  outline: none;
+  border: 1px solid transparent;
+  color: var(--body-text);
 }
 
 .h1-article-title {
@@ -87,12 +97,16 @@ time {
 }
 
 .site-name {
+  font-weight: bold;
+  margin-left: -3px;
   align-self: center;
   color: var(--heading);
-  font-size: 3rem;
+  font-size: 6rem;
 }
 
 .site-name-article {
+  font-weight: bold;
+  margin-left: -3px;
   margin-top: 0.25rem;
 }
 
@@ -123,6 +137,5 @@ time {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
   }
 }

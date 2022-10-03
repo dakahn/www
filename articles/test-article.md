@@ -1,7 +1,7 @@
 ---
 layout: article-layout.njk
-title: Test Article
-date: 2020-10-12
+title: Making the Web Accessible via Protracted Slack dms
+date: 2022-10-01
 tags: ["post"]
 ---
 
