@@ -96,13 +96,13 @@ time {
 }
 
 .site-name-article:hover {
-  color: var(--body-text)
+  color: var(--alt-background);
   background-color: transparent;
 }
 
 .site-name-article:focus {
-  color: var(--body-text)
-  background-color: var(--alt-background);
+  color: var(--alt-background);
+  background-color: transparent;
 }
 
 @media only screen and (min-width: 800px) {
