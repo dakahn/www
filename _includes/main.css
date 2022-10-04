@@ -8,62 +8,57 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
 }
 
 body {
   min-height: 100vh;
-  max-width: 350px;
+  max-width: 380px;
   margin: 0 auto;
   background-color: var(--background);
   color: var(--body-text);
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Roboto", "Noto Sans", "Droid Sans", sans-serif; 
   flex-direction: column;
   min-height: 100%;
 }
 
 a {
-  padding-top: 3px;
   color: var(--link-text);
 }
 
 a:focus {
   background-color: var(--alt-background);
-  text-decoration: none;
   outline: none;
   color: var(--body-text);
 }
 
 a:hover {
   background-color: var(--alt-background);
-  text-decoration: none;
   color: var(--body-text);
 }
 
 a:active {
   background-color: var(--alt-background);
-  text-decoration: none;
   color: var(--body-text);
 }
 
 .intro-paragraph {
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 1rem;
   margin: 0rem 0rem 1.5rem 0rem;
 }
 
 .article.article-title {
   color: var(--body-text);
-  font-weight: 300;
-  font-size: 1.75rem;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 .article-title a {
   color: var(--alt-background);
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .article-title a:hover {
@@ -86,21 +81,23 @@ time {
 }
 
 .site-name {
-  margin-top: 1.7rem;
+  transform: scale(1, 1.25);
+  margin-top: 4rem;
   font-weight: bold;
   margin-left: -6px;
   align-self: center;
   color: var(--heading);
-  font-size: 4.5rem;
+  font-size: 3.6rem;
 }
 
 .site-name-article {
-  margin-top: 0rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .site-name-article:hover {
   color: var(--body-text)
-  background-color: var(--alt-background);
+  background-color: transparent;
 }
 
 .site-name-article:focus {
@@ -111,11 +108,11 @@ time {
 @media only screen and (min-width: 800px) {
   html {
     margin-top: 2rem;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   body {
-    max-width: 680px;
+    max-width: 692px;
     margin: 0 auto;
   }
 
@@ -126,6 +123,7 @@ time {
   }
 
   .site-name {
-    font-size: 5.8rem;
+    font-size: 6.8rem;
+    margin-botom: 1.5rem;
   } 
 }
