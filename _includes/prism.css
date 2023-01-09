@@ -1,171 +1,132 @@
-/**
- * a11y-darkest theme for JavaScript, CSS, and HTML
- * Based on the a11y-dark theme by @author ericwbailey
+/*
+ * Laserwave Theme originally by Jared Jones for Visual Studio Code
+ * https://github.com/Jaredk3nt/laserwave
+ *
+ * Ported for PrismJS by Simon Jespersen [https://github.com/simjes]
  */
-
-:root {
-  /* --code-background: #488a8a; */
-  --base: #fbf5f3;
-  --alt-base: #fbf5f3;
-  --element: #fbf5f3;
-  --attribute: #fbf5f3;
-  --value: #fbf5f3;
-}
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: var(--alt-base);
-  background: none;
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-    monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-  font-size: 0.75rem;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+	color: #ffffff;
+	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; /* this is the default */
+	/* The following properties are standard, please leave them as they are */
+	font-size: 1em;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	/* The following properties are also standard */
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
-/* Code blocks */
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection,
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection {
+	background: #eb64b927;
+	color: inherit;
+}
+
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection {
+	background: #eb64b927;
+	color: inherit;
+}
+
+/* Properties specific to code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
-  border-radius: 0.3em;
+	padding: 1em; /* this is standard */
+	margin: 0.5em 0; /* this is the default */
+	overflow: auto; /* this is standard */
+	border-radius: 0.5em;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: var(--code-background);
-}
-
-/* Inline code */
+/* Properties specific to inline code */
 :not(pre) > code[class*="language-"] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
+	padding: 0.2em 0.3em;
+	border-radius: 0.5rem;
+	white-space: normal; /* this is standard */
 }
 
 .token.comment,
 .token.prolog,
-.token.doctype,
 .token.cdata {
-  color: var(--base);
+	color: #91889b;
 }
 
 .token.punctuation {
-  color: var(--base);
+	color: #7b6995;
 }
 
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: var(--element);
-}
-
-.token.boolean,
-.token.number {
-  color: var(--value);
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
 .token.builtin,
-.token.inserted {
-  color: var(--attribute);
+.token.constant,
+.token.boolean {
+	color: #ffe261;
 }
 
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-  color: var(--attribute);
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function {
-  color: var(--value);
-}
-
-.token.keyword {
-  color: var(--attribute);
-}
-
-.token.regex,
-.token.important {
-  color: var(--alt-base);
+.token.number {
+	color: #b381c5;
 }
 
 .token.important,
+.token.atrule,
+.token.property,
+.token.keyword {
+	color: #40b4c4;
+}
+
+.token.doctype,
+.token.operator,
+.token.inserted,
+.token.tag,
+.token.class-name,
+.token.symbol {
+	color: #74dfc4;
+}
+
+.token.attr-name,
+.token.function,
+.token.deleted,
+.token.selector {
+	color: #eb64b9;
+}
+
+.token.attr-value,
+.token.regex,
+.token.char,
+.token.string {
+	color: #b4dce7;
+}
+
+.token.entity,
+.token.url,
+.token.variable {
+	color: #ffffff;
+}
+
+/* The following rules are pretty similar across themes, but feel free to adjust them */
 .token.bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .token.italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 .token.entity {
-  cursor: help;
+	cursor: help;
 }
 
-@media screen and (-ms-high-contrast: active) {
-  code[class*="language-"],
-  pre[class*="language-"] {
-    color: windowText;
-    background: window;
-  }
-
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
-    background: window;
-  }
-
-  .token.important {
-    background: highlight;
-    color: window;
-    font-weight: normal;
-  }
-
-  .token.atrule,
-  .token.attr-value,
-  .token.function,
-  .token.keyword,
-  .token.operator,
-  .token.selector {
-    font-weight: bold;
-  }
-
-  .token.attr-value,
-  .token.comment,
-  .token.doctype,
-  .token.function,
-  .token.keyword,
-  .token.operator,
-  .token.property,
-  .token.string {
-    color: highlight;
-  }
-
-  .token.attr-value,
-  .token.url {
-    font-weight: normal;
-  }
+.token.namespace {
+	opacity: 0.7;
 }
