@@ -2,7 +2,7 @@
   --background: #000001;
   --focus:#F598FE;
   --body: #FFFFFF;
-  --link: #00CDFF;
+  --link: #82FF72;
   --heading: #FFFFFF;
 }
 
@@ -31,8 +31,8 @@ a:focus {
   outline: none;
   text-decoration: none;
   color: var(--background);
-  background-color: var(--body);
-  box-shadow: 0.25rem 0.25rem var(--link), -0.25rem -0.25rem var(--link);
+  background-color: var(--link);
+  box-shadow: 0.2rem 0.2rem var(--body);
 }
 
 .intro-paragraph {
@@ -55,10 +55,10 @@ a:focus {
 
 .article-title a:focus {
   padding: 0 0.5;
-  background-color: var(--body);
   outline: none;
   color: var(--background);
-  box-shadow: 0.25rem 0.25rem var(--link), -0.25rem -0.25rem var(--link);
+  background-color: var(--link);
+  box-shadow: 0.3rem 0.3rem var(--body);
 }
 
 time {
@@ -83,11 +83,12 @@ time {
 
 .site-name-article {
   margin-top: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .site-name-article:focus {
   color: var(--background);
+  box-shadow: 0.5rem 0.5rem var(--body);
 }
 
 @media only screen and (min-width: 800px) {

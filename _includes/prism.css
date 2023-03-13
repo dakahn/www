@@ -71,18 +71,18 @@ pre[class*="language-"] {
 .token.builtin,
 .token.constant,
 .token.boolean {
-  color: #F598FE;
+  color: #82FF72;
 }
 
 .token.number {
-	color: #F598FE;
+	color: #82FF72;
 }
 
 .token.important,
 .token.atrule,
 .token.property,
 .token.keyword {
-  color: #F598FE;
+  color: #7265FE;
 }
 
 .token.doctype,
@@ -91,14 +91,17 @@ pre[class*="language-"] {
 .token.tag,
 .token.class-name,
 .token.symbol {
-	color: #F598FE;
+	color: #82FF72;
 }
 
-.token.attr-name,
+.token.attr-name {
+  color: #7265FE;
+}
+
 .token.function,
 .token.deleted,
 .token.selector {
-	color: #F598FE;
+	color: #82FF72;
 }
 
 .token.attr-value,
@@ -111,7 +114,7 @@ pre[class*="language-"] {
 .token.entity,
 .token.url,
 .token.variable {
-	color: #ffffff;
+	color: #FFFFFF;
 }
 
 /* The following rules are pretty similar across themes, but feel free to adjust them */
