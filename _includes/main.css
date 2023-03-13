@@ -1,19 +1,19 @@
 :root {
-  --background: black;
-  --focus:#eb64b9;
-  --body: #fff;
-  --link: #eb64b9;
-  --heading: #fff;
+  --background: #000001;
+  --focus:#F598FE;
+  --body: #FFFFFF;
+  --link: #00CDFF;
+  --heading: #FFFFFF;
 }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
 }
 
 body {
   min-height: 100vh;
-  max-width: 380px;
+  max-width: 381px;
   margin: 0 auto;
   background-color: var(--background);
   color: var(--body);
@@ -27,11 +27,12 @@ a {
 }
 
 a:focus {
-  padding: 0 0.5;
-  background-color: var(--focus);
+  padding: 1 0.5;
   outline: none;
-  color: var(--background);
   text-decoration: none;
+  color: var(--background);
+  background-color: var(--body);
+  box-shadow: 0.25rem 0.25rem var(--link), -0.25rem -0.25rem var(--link);
 }
 
 .intro-paragraph {
@@ -54,9 +55,10 @@ a:focus {
 
 .article-title a:focus {
   padding: 0 0.5;
-  background-color: var(--focus);
+  background-color: var(--body);
   outline: none;
   color: var(--background);
+  box-shadow: 0.25rem 0.25rem var(--link), -0.25rem -0.25rem var(--link);
 }
 
 time {
@@ -81,12 +83,11 @@ time {
 
 .site-name-article {
   margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .site-name-article:focus {
-  color: var(--link);
-  background-color: transparent;
+  color: var(--background);
 }
 
 @media only screen and (min-width: 800px) {
