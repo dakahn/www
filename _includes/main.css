@@ -1,9 +1,9 @@
 :root {
   --background: #4a4a4a;
   --focus: #f598fe;
-  --body: #ffffff;
+  --body: #e6e6e6;
   --link: #82ff72;
-  --heading: #ffffff;
+  --heading: #e6e6e6;
 }
 
 html {
@@ -103,7 +103,6 @@ time {
 .site-name {
   text-decoration: none;
   margin-top: 2rem;
-  margin-bottom: 1rem;
   font-weight: bold;
   color: var(--heading);
   font-size: 3rem;
