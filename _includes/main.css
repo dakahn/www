@@ -50,6 +50,7 @@ a:focus {
 ul {
   list-style: none;
   padding: 0rem;
+  margin-top: 3rem;
 }
 
 ul li {
@@ -73,6 +74,7 @@ footer {
   color: var(--link);
   font-weight: 800;
   font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .article-title a {
@@ -102,26 +104,20 @@ time {
   text-decoration: none;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  margin-left: 2rem;
   font-weight: bold;
   color: var(--heading);
   font-size: 3rem;
-  clip-path: inset(25px 0px 22px -40px);
-  box-shadow: -0.5rem 0 0 var(--body), -1rem 0 0 var(--link),
-    -1.5rem 0 0 #FF6959, -2rem 0 0 #E3FF66;
 }
 
 .site-name-article {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  clip-path: inset(16px 0px 13px -40px);
+  clip-path: inset(8px 0px 8px -40px);
 }
 
 .site-name-article:focus {
   color: var(--link);
   background-color: var(--background);
-  box-shadow: -0.5rem 0 0 var(--body), -1rem 0 0 var(--link),
-    -1.5rem 0 0 #71db63, -2rem 0 0 #3c7535;
 }
 
 @media only screen and (min-width: 800px) {
@@ -133,14 +129,5 @@ time {
   body {
     max-width: 692px;
     margin: 0 auto;
-  }
-
-  .site-name {
-    clip-path: inset(25px 0px 22px -40px);
-  }
-
-  .site-name-article {
-    margin-bottom: 1rem;
-    clip-path: inset(16px 0px 13px -40px);
   }
 }
