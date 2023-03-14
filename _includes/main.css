@@ -41,6 +41,10 @@ a:focus {
   margin: 0rem 0rem 1.5rem 0rem;
 }
 
+.skip-link.to-top{
+  padding-bottom: 2.5rem;
+}
+
 .article.article-title {
   color: var(--link);
   font-weight: 800;
