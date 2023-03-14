@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to article</a>
+    <a href="#main-content" class="skip-link">Skip to main</a>
     <header>
       <a href="/" class="site-name site-name-article">D.A. KAHN</a>
     </header>
@@ -20,6 +20,8 @@
       <time id="time" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
       {{ content | safe }}
     </article>
-    <a href="#top" class="skip-link to-top">Back to top</a>
+    <footer>
+      <a href="#top" class="skip-link to-top">Back to top</a>
+    </footer>
   </body>
 </html>
