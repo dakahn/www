@@ -10,7 +10,7 @@ pre[class*="language-"] {
 	color: #ffffff;
 	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; /* this is the default */
 	/* The following properties are standard, please leave them as they are */
-	font-size: 1em;
+	font-size: .75rem;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -61,11 +61,11 @@ pre[class*="language-"] {
 .token.comment,
 .token.prolog,
 .token.cdata {
-	color: #7d7d7d;
+	color: #bababa;
 }
 
 .token.punctuation {
-	color: #7d7d7d;
+	color: #bababa;
 }
 
 .token.builtin,
@@ -82,7 +82,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.property,
 .token.keyword {
-  color: #7265FE;
+  color: #4CB33E;
 }
 
 .token.doctype,
@@ -95,7 +95,7 @@ pre[class*="language-"] {
 }
 
 .token.attr-name {
-  color: #7265FE;
+  color: #4CB33E;
 }
 
 .token.function,
