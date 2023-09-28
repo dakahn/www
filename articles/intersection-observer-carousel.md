@@ -4,11 +4,10 @@ title: Using Intersection Observer to Improve Carousel Keyboard Usability
 date: 2023-09-27
 tags: ["post"]
 ---
-# Using Intersection Observer to Improve Carousel Keyboard Usability
 
 A carousel is typically a `div` with a list of interactive items arranged horizontally inside of it. The `div` has `overflow: auto` set in CSS so the user can scroll through the items. Each item could have multiple interactive elements. Typically these will be links. The carousel also may include redundant scrolling controls like buttons with left and right chevrons or something like that. A poorly engineered carousel component can create many usabiltiy challenges for users across the ability spectrum. Today we're thinking about sighted keyboard users, the problems our carousels create for them and one solution for how to mitigate the damage. 
 
-If the sighted keyboard user lucks out each item in the carousel has one single tab stop and they only have to get around one dozen or so items. If they're unlucky each item will have multiple interactive elements or carousel items load infinitely and the number of tab stops quickly balloons into the dozens or maybe infinitely. The problem compounds with multi-carousel layouts which are more common than you'd think. ([Here's a popular website's recipe page](https://cooking.nytimes.com/) which at the time of writing boasts 11!).
+If the sighted keyboard user lucks out each item in the carousel has one single tab stop and they only have to get around one dozen or so items. If they're unlucky each item will have multiple interactive elements or carousel items load infinitely and the number of tab stops quickly balloons into the dozens or maybe infinitely. The problem compounds with multi-carousel layouts which are more common than you'd think ([here's a popular website's recipe page](https://cooking.nytimes.com/) which at the time of writing boasts 11).
 
 Using the Intersection Observer web API we can allow the user to opt into which carousel items they want to be able to focus with their keyboard. Allowing them to more easily move past our carousels and onto other content on the page. 
 

@@ -1,9 +1,7 @@
 :root {
-  --background: black;
-  --focus: #f598fe;
-  --body: #e6e6e6;
-  --link: #82ff72;
-  --heading: #e6e6e6;
+  --background: #2d2d2d;
+  --base: #CCCCCC;
+  --secondary: #EE8C48;
 }
 
 html {
@@ -11,112 +9,54 @@ html {
   display: flex;
 }
 
-svg {
-  fill: var(--body)
-}
-
-.external-link:focus {
-  background-color: var(--background);
-  box-shadow: 0.2rem 0.2rem var(--background);
-}
-
-.external-link:focus svg{
-  fill: var(--link);
-}
-
 body {
   min-height: 100vh;
   max-width: 90vw;
   margin: 0 auto;
   background-color: var(--background);
-  color: var(--body);
+  color: var(--base);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", "Roboto", "Noto Sans", "Droid Sans", sans-serif;
   flex-direction: column;
 }
 
 a {
-  color: var(--link);
+  color: var(--secondary);
+}
+
+a:hover {
+  color: var(--secondary);
 }
 
 a:focus {
-  outline: none;
+  color: var(--secondary);
   text-decoration: none;
-  color: var(--background);
-  background-color: var(--link);
-  box-shadow: 0.2rem 0.2rem var(--body);
 }
 
-ul {
-  list-style: none;
-  padding: 0rem;
-  margin-top: 3rem;
-}
-
-ul li {
-  margin-bottom: 1rem;
-  margin-left: 0.25rem;
-  padding-left: 0.5rem;
-  box-shadow: -0.2rem 0 0 var(--body);
-  clip-path: inset(12px 0px 0px -10px);
+svg {
+  fill: var(--base)
 }
 
 footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: 90%;
 }
 
-.intro-paragraph {
-  font-weight: 500;
+#logo {
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--base);
+  font-size: 6rem;
+}
+
+#skip-to-content-link {
+  font-size: 90%;
 }
 
 .article-title {
-  color: var(--link);
-  font-weight: 800;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.article-title a {
-  color: var(--link);
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.article-title a:focus {
-  padding: 0 0.5;
-  outline: none;
-  color: var(--background);
-  background-color: var(--link);
-  box-shadow: 0.3rem 0.3rem var(--body);
-}
-
-time {
-  font-weight: 600;
-  padding: 0px 2px;
-  border: 2px solid var(--body-text);
-  text-transform: uppercase;
-  color: var(--body-text);
-  font-size: 0.75rem;
-}
-
-.site-name {
-  text-decoration: none;
-  margin-top: 2rem;
-  font-weight: bold;
-  color: var(--heading);
-  font-size: 3rem;
-}
-
-.site-name-article {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  clip-path: inset(8px 0px 8px -40px);
-}
-
-.site-name-article:focus {
-  color: var(--link);
-  background-color: var(--background);
+  color: var(--secondary);
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 800px) {
@@ -130,3 +70,4 @@ time {
     margin: 0 auto;
   }
 }
+

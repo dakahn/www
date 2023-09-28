@@ -11,12 +11,12 @@
     </style>
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main</a>
+    <a href="#main-content" id="skip-to-content-link">Skip to main</a>
     <header>
-      <a href="/" class="site-name site-name-article">D.A. Kahn</a>
+      <a href="/" class="site-name site-name-article" aria-label="D.A. Kahn's logo. A geometric bat in flight." id="logo">◥▅◤</a>
     </header>
     <article role="main" id="main-content">
-      <h2 class="article article-title">{{ title }}</h1>
+      <h1 class="article article-title">{{ title }}</h1>
       <time id="time" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
       {{ content | safe }}
     </article>

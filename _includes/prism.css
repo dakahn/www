@@ -1,120 +1,114 @@
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #ffffff;
-	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; /* this is the default */
-	/* The following properties are standard, please leave them as they are */
+	color: #ccc;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 90%;
-	direction: ltr;
 	text-align: left;
 	white-space: pre-wrap;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.6;
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
-	tab-size: 2;
-	/* The following properties are also standard */
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+
 }
 
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection,
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection {
-	background: #eb64b927;
-	color: inherit;
-}
-
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection,
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection {
-	background: #eb64b927;
-	color: inherit;
-}
-
-/* Properties specific to code blocks */
+/* Code blocks */
 pre[class*="language-"] {
-	padding: 1em; /* this is standard */
-	margin: 0.5em 0; /* this is the default */
-	overflow: auto; /* this is standard */
-	border-radius: 0.5em;
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
 }
 
-/* Properties specific to inline code */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #2d2d2d;
+}
+
+/* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: 0.2em 0.3em;
-	border-radius: 0.5rem;
-	white-space: normal; /* this is standard */
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
 }
 
 .token.comment,
+.token.block-comment,
 .token.prolog,
+.token.doctype,
 .token.cdata {
-	color: #bababa;
+	color: #999;
 }
 
 .token.punctuation {
-	color: #bababa;
+	color: #ccc;
 }
 
-.token.builtin,
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+	color: #e2777a;
+}
+
+.token.function-name {
+	color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+	color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
 .token.constant,
-.token.boolean {
-  color: #82FF72;
+.token.symbol {
+	color: #f8c555;
 }
 
-.token.number {
-	color: #82FF72;
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+	color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
 }
 
 .token.important,
-.token.atrule,
-.token.property,
-.token.keyword {
-  color: #4CB33E;
-}
-
-.token.doctype,
-.token.operator,
-.token.inserted,
-.token.tag,
-.token.class-name,
-.token.symbol {
-	color: #82FF72;
-}
-
-.token.attr-name {
-  color: #4CB33E;
-}
-
-.token.function,
-.token.deleted,
-.token.selector {
-	color: #82FF72;
-}
-
-.token.attr-value,
-.token.regex,
-.token.char,
-.token.string {
-  color: #FFFFFF;
-}
-
-.token.entity,
-.token.url,
-.token.variable {
-	color: #FFFFFF;
-}
-
-/* The following rules are pretty similar across themes, but feel free to adjust them */
 .token.bold {
 	font-weight: bold;
 }
-
 .token.italic {
 	font-style: italic;
 }
@@ -123,6 +117,7 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-.token.namespace {
-	opacity: 0.7;
+.token.inserted {
+	color: green;
 }
+
