@@ -1,5 +1,5 @@
 :root {
-  --background: #4a4a4a;
+  --background: black;
   --focus: #f598fe;
   --body: #e6e6e6;
   --link: #82ff72;
@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
 }
 
