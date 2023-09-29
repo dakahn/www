@@ -11,7 +11,7 @@ pagination:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>D.A. Kahn's website</title>
+    <title>D.A. Kahn's website✌🏼</title>
     {% set css %} {% include "reset.css" %} {% include "main.css" %} {% endset
     %}
     <style>
@@ -19,7 +19,6 @@ pagination:
     </style>
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main</a>
     <header>
       <span aria-hidden="true" id="logo">oܫo</span>
       <h1 class="sr-only">D.A. Kahn's website</h1>
@@ -35,8 +34,11 @@ pagination:
         {% for post in posts %}
         <li>
           <article>
-            <h2 class="article-title">
-              <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+            <h2 class="article">
+              <a class="index-article-title" href="{{ post.url | url }}">
+                {{ post.data.title }}
+              </a>
+              <time>{{ post.date | dateReadable }}</time>
             </h2>
           </article>
         </li>

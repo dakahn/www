@@ -2,16 +2,17 @@
   --background: #2d2d2d;
   --base: #cccccc;
   --secondary: #ee8c48;
+  --tertiary: #7ec699;
 }
 
 html {
-  font-size: 18px;
+  font-size: calc(0.1vw + 0.1vh + 1em);
   display: flex;
 }
 
 body {
   min-height: 100vh;
-  max-width: 90vw;
+  max-width: 95vw;
   margin: 0 auto;
   background-color: var(--background);
   color: var(--base);
@@ -25,8 +26,10 @@ a {
 }
 
 a:focus {
-  color: var(--secondary);
-  text-decoration: none;
+  /* outline: 4px solid var(--tertiary); */
+  outline: none;
+  color: var(--background);
+  background-color: var(--tertiary);
 }
 
 #article-list li {
@@ -45,11 +48,24 @@ footer {
   padding-top: 1rem;
 }
 
+footer a:focus {
+  outline: 3px solid var(--tertiary);
+  background-color: var(--background);
+}
+
+time {
+  font-size: 80%;
+}
+
 #logo {
-  text-decoration: none;
   font-weight: normal;
   color: var(--base);
   font-size: 6rem;
+  text-decoration: none;
+}
+
+#logo:focus {
+  color: var(--background);
 }
 
 #secondary-paragraph {
@@ -61,9 +77,19 @@ footer {
   font-size: 90%;
 }
 
-.article-title {
+.article {
+  display: flex;
+  flex-direction: column;
   color: var(--secondary);
   font-size: 1rem;
+}
+
+.index-article-title {
+  text-decoration: underline;
+}
+
+.article-title {
+  font-size: 1.5rem;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -79,7 +105,7 @@ footer {
 @media only screen and (min-width: 800px) {
   html {
     margin-top: 2rem;
-    font-size: 20px;
+    font-size: calc(0.1vw + 0.1vh + 1em);
   }
 
   body {
