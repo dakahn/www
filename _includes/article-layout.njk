@@ -15,13 +15,22 @@
     <header>
       <a href="/" aria-label="back" id="logo">oܫo</a>
     </header>
-    <article role="main" id="main-content">
-      <h1 class="article article-title">{{ title }}</h1>
-      <time id="time" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-      {{ content | safe }}
-    </article>
+    <main>
+      <article id="main-content">
+        <h1 class="article article-title">{{ title }}</h1>
+        <time id="time" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+        {{ content | safe }}
+      </article>
+      <a href="#top" class="skip-link">Back to top</a>
+    </main>
     <footer>
-      <a href="#top" class="skip-link to-top">Back to top</a>
+      <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
+      title="Explanation of WCAG 2 Level AAA conformance">
+      <img height="32" width="88"
+          src="https://www.w3.org/WAI/WCAG21/wcag2.1AAA-v"
+          alt="Level AAA conformance,
+                W3C WAI Web Content Accessibility Guidelines 2.1">
+      </a>
     </footer>
   </body>
 </html>

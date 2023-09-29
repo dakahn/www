@@ -38,9 +38,10 @@ svg {
 }
 
 footer {
-  margin-top: 4rem;
+  border-top: 2px solid var(--base);
+  margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 90%;
+  padding-top: 1rem;
 }
 
 #logo {
@@ -50,7 +51,7 @@ footer {
   font-size: 6rem;
 }
 
-#skip-to-content-link {
+.skip-link {
   font-size: 90%;
 }
 
