@@ -1,7 +1,7 @@
 :root {
   --background: #2d2d2d;
-  --base: #CCCCCC;
-  --secondary: #EE8C48;
+  --base: #cccccc;
+  --secondary: #ee8c48;
 }
 
 html {
@@ -24,23 +24,24 @@ a {
   color: var(--secondary);
 }
 
-a:hover {
-  color: var(--secondary);
-}
-
 a:focus {
   color: var(--secondary);
   text-decoration: none;
 }
 
+#article-list li {
+  margin-bottom: 0.5rem;
+}
+
 svg {
-  fill: var(--base)
+  fill: var(--base);
+  margin-left: 0.5rem;
 }
 
 footer {
+  display: flex;
   border-top: 2px solid var(--base);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
   padding-top: 1rem;
 }
 
@@ -49,6 +50,11 @@ footer {
   font-weight: normal;
   color: var(--base);
   font-size: 6rem;
+}
+
+#secondary-paragraph {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .skip-link {
@@ -61,12 +67,12 @@ footer {
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -81,4 +87,3 @@ footer {
     margin: 0 auto;
   }
 }
-
