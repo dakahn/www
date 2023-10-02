@@ -81,6 +81,7 @@ time {
     1px 1px var(--secondary), 0.75px 0.75px var(--secondary),
     0.5px 0.5px var(--secondary), 0.25px 0.25px var(--secondary);
   letter-spacing: 6px;
+  margin-bottom: 1rem;
 }
 
 .name:focus {
