@@ -18,8 +18,21 @@ An accessibility advocate can be a mid to senior level developer or designer pos
 An Accessibility Advocate has three main objectives:
 
 1. Create awareness with team members and stake holders
+
+- talk about the disabled user experience
+- advocate for disabled users in cross-discipline meetings
+
 2. Secure resources (budget, personnel, tools, testing)
+
+- ensure accessibility testing and remediation are part of the release strategy
+- make accessibility fundamentals an important part of hiring
+- reach out for more specific/advanced accessibility testing needs
+
 3. Center accessibility in the development and design process
+
+- shift the accessibility conversation left and engage with design early
+- be the “point person” for accessibility questions/concerns on your team
+- push for continued testing and establishing a team wide culture of accessibility
 
 ## How can an Accessibility Advocate's Success be measured?
 

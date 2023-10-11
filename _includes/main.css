@@ -26,7 +26,6 @@ a {
 }
 
 a:focus {
-  /* outline: 4px solid var(--tertiary); */
   outline: none;
   color: var(--background);
   background-color: var(--tertiary);
