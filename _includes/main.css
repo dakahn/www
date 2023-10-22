@@ -1,10 +1,8 @@
-@import url("fonts.gooleapis.com/css2?family=Inter:wght@400;900&display=swap");
-
 /* color scheme ref: https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays */
 :root {
   --background: #2d2d2d;
   --base: #cccccc;
-  --secondary: #00ff66;
+  --secondary: #ffb000;
   --tertiary: #00ff66;
 }
 
@@ -13,14 +11,23 @@ html {
   display: flex;
 }
 
+footer {
+  font-size: 90%;
+  margin-top: 2rem;
+  border-top: 1px solid var(--base)
+}
+
 body {
-  min-height: 100%;
+  min-height: 100vh;
   max-width: 90vw;
   margin: 0 auto;
   background-color: var(--background);
   color: var(--base);
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Ubuntu", "Roboto", "Noto Sans", "Droid Sans", sans-serif;
+  /* font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", */
+  /*   "Ubuntu", "Roboto", "Noto Sans", "Droid Sans", sans-serif; */
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
   flex-direction: column;
 }
 
@@ -36,32 +43,9 @@ a:focus {
   text-decoration-thickness: 2px;
 }
 
-#article-list {
-  margin-top: 2rem;
-  list-style: none;
-  padding-left: 0;
-}
-
-#article-list li {
-  margin-bottom: 0.5rem;
-}
-
 svg {
   fill: var(--base);
   margin-left: 0.5rem;
-}
-
-footer {
-  display: flex;
-  border-top: 2px solid var(--base);
-  margin-top: 2rem;
-  padding-top: 1rem;
-}
-
-footer a:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--tertiary);
-  background-color: var(--background);
 }
 
 time {
@@ -73,8 +57,6 @@ time {
   font-size: 2rem;
   text-decoration: none;
   font-weight: 900;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 
 .name:focus {
@@ -85,11 +67,33 @@ time {
   font-size: 90%;
 }
 
+#external-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+#external-links li {
+  margin-right: .5rem;
+}
+
 .article {
   display: flex;
   flex-direction: column;
   color: var(--secondary);
   font-size: 1rem;
+}
+
+#article-list {
+  margin-top: 2rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+#article-list li {
+  margin-bottom: 0.5rem;
 }
 
 .index-article-title {
@@ -112,7 +116,6 @@ time {
 
 @media only screen and (min-width: 800px) {
   html {
-    margin-top: 2rem;
     font-size: calc(0.1vw + 0.1vh + 1em);
   }
 
