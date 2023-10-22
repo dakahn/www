@@ -1,10 +1,11 @@
-@import url('fonts.gooleapis.com/css2?family=Inter:wght@400;900&display=swap');
+@import url("fonts.gooleapis.com/css2?family=Inter:wght@400;900&display=swap");
 
+/* color scheme ref: https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays */
 :root {
   --background: #2d2d2d;
   --base: #cccccc;
-  --secondary: #ee8c48;
-  --tertiary: #7ec699;
+  --secondary: #00ff66;
+  --tertiary: #00ff66;
 }
 
 html {
@@ -13,12 +14,12 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   max-width: 90vw;
   margin: 0 auto;
   background-color: var(--background);
   color: var(--base);
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", "Roboto", "Noto Sans", "Droid Sans", sans-serif;
   flex-direction: column;
 }
@@ -28,13 +29,17 @@ a {
 }
 
 a:focus {
-  outline: none;
-  color: var(--background);
   background-color: var(--tertiary);
+  box-shadow: 0 0 0 3px var(--tertiary);
+  color: var(--background);
+  outline: none;
+  text-decoration-thickness: 2px;
 }
 
 #article-list {
   margin-top: 2rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 #article-list li {
@@ -48,13 +53,14 @@ svg {
 
 footer {
   display: flex;
-  border-top: 1px solid var(--base);
+  border-top: 2px solid var(--base);
   margin-top: 2rem;
   padding-top: 1rem;
 }
 
 footer a:focus {
-  outline: 3px solid var(--tertiary);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--tertiary);
   background-color: var(--background);
 }
 
@@ -68,19 +74,7 @@ time {
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
-  text-shadow: 6px 6px var(--secondary), 5.75px 5.75px var(--secondary),
-    5.5px 5.5px var(--secondary), 5.25px 5.25px var(--secondary),
-    5px 5px var(--secondary), 4.75px 4.75px var(--secondary),
-    4.5px 4.5px var(--secondary), 4.25px 4.25px var(--secondary),
-    4px 4px var(--secondary), 3.75px 3.75px var(--secondary),
-    3.5px 3.5px var(--secondary), 3.25px 3.25px var(--secondary),
-    3px 3px var(--secondary), 2.75px 2.75px var(--secondary),
-    2.5px 2.5px var(--secondary), 2.25px 2.25px var(--secondary),
-    2px 2px var(--secondary), 1.75px 1.75px var(--secondary),
-    1.5px 1.5px var(--secondary), 1.25px 1.25px var(--secondary),
-    1px 1px var(--secondary), 0.75px 0.75px var(--secondary),
-    0.5px 0.5px var(--secondary), 0.25px 0.25px var(--secondary);
-  letter-spacing: 6px;
+  letter-spacing: 24px;
   margin-bottom: 1rem;
 }
 
