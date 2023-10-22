@@ -2,6 +2,7 @@ const moment = require("moment");
 const CleanCSS = require("clean-css");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { DateTime } = require("luxon");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 moment.locale("en");
 
@@ -22,4 +23,5 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
 };
