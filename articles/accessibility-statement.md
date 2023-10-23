@@ -5,6 +5,9 @@ date: 2023-22-10
 tags: ["post"]
 ---
 
+Trying out the auto generated accessibility statement tool [on the W3C
+website](https://www.w3.org/WAI/planning/statements/generator/#create).
+
 ## Accessibility Statement for The Website of D.A. Kahn
 This is an accessibility statement from dakahn.zone.
 
