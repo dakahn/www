@@ -4,9 +4,6 @@
   --base: #cccccc;
   --secondary: #ffb000;
   --tertiary: #00ff66;
-}
-
-html {
   font-size: calc(0.1vw + 0.1vh + 1em);
   display: flex;
   justify-content: center;
@@ -15,8 +12,9 @@ html {
 footer {
   font-size: 90%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-top: 1px solid var(--base);
+  padding-top: 0.5rem;
 }
 
 body {
@@ -26,6 +24,7 @@ body {
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
   text-rendering: optimizeLegibility;
+  max-width: 95vw;
 }
 
 a {
@@ -67,7 +66,6 @@ time {
   font-size: 2.5rem;
   text-decoration: none;
   font-weight: 400;
-  letter-spacing: 0.25rem;
 }
 
 .skip-link {
@@ -117,16 +115,12 @@ time {
   width: 1px;
 }
 
-@media only screen and (min-width: 800px) {
-  html {
-    font-size: calc(0.1vw + 0.1vh + 1em);
-  }
-
+@media only screen and (min-width: 60rem) {
   body {
-    max-width: 35em;
+    max-width: 680px;
   }
 
   header {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 }
