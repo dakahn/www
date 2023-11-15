@@ -122,4 +122,8 @@ time {
   header {
     margin-top: 4rem;
   }
+
+  #article-list {
+    padding-left: 0;
+  }
 }
