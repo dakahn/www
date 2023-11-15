@@ -39,8 +39,8 @@ pagination:
             <h2 class="article">
               <a class="index-article-title" href="{{ post.url | url }}">
                 {{ post.data.title }}
+                <time>{{ post.date | dateReadable }}</time>
               </a>
-              <time>{{ post.date | dateReadable }}</time>
             </h2>
           </article>
         </li>
