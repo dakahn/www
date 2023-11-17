@@ -25,6 +25,7 @@ body {
     sans-serif;
   /* text-rendering: optimizeLegibility; */
   max-width: 95vw;
+  overflow-y: scroll;
 }
 
 a {
@@ -74,6 +75,7 @@ time {
 
 .skip-link {
   font-size: 90%;
+  margin-top: 10px;
 }
 
 #external-links {
