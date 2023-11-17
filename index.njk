@@ -1,7 +1,7 @@
 ---
 pagination:
   data: collections.post
-  size: 10
+  size: 100
   reverse: true
   alias: posts
 ---
@@ -30,7 +30,7 @@ pagination:
     </header>
     <main id="main">
       <p class="intro-paragraph">
-      My name is D.A. Kahn. I work as an accessibility consultant, UX designer and font end developer helping teams and organizations create digital experiences that accommodate and delight users across the ability spectrum.<span role="img" aria-label="surfer">🏄</span><span role="img" aria-label="peace sign">✌️</span>
+      My name is D.A. Kahn. I work as an accessibility consultant, UX designer and front end developer helping teams and organizations create and maintain digital experiences that accommodate users across the ability spectrum. <span role="img" aria-label="smiley face">☻</span>
       </p>
       <ul id="article-list">
         {% for post in posts %}
@@ -39,8 +39,8 @@ pagination:
             <h2 class="article">
               <a class="index-article-title" href="{{ post.url | url }}">
                 {{ post.data.title }}
-                <time>{{ post.date | dateReadable }}</time>
               </a>
+              <time>{{ post.date | dateReadable }}</time>
             </h2>
           </article>
         </li>

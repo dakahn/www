@@ -1,9 +1,8 @@
-/* color scheme ref: https://superuser.com/questions/361299/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays */
 :root {
-  --background: #181a1b;
-  --base: #f8f8f2;
-  --secondary: #00e0e1;
-  --tertiary: #ffd700;
+  --background: #1a1d21;
+  --base: #d1d2d3;
+  --tertiary: #74fae4;
+  --secondary: #f84e52;
   font-size: calc(0.2vw + 0.1vh + 1em);
   display: flex;
   justify-content: center;
@@ -12,9 +11,10 @@
 footer {
   font-size: 90%;
   margin-top: 60px;
-  margin-bottom: 35px;
-  border-top: 1px solid var(--base);
+  margin-bottom: 10px;
   padding-top: 10px;
+  border-top: 4px solid var(--base);
+  border-right: 6px solid var(--secondary);
 }
 
 body {
@@ -23,26 +23,28 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility; */
   max-width: 95vw;
+  overflow: scroll;
 }
 
 a {
   color: var(--secondary);
-  text-decoration-skip-ink: none;
+  border: 1px solid transparent;
 }
 
 a:focus-visible {
   background-color: var(--tertiary);
-  box-shadow: 0 0 0 3px var(--tertiary);
   color: var(--background);
   outline: none;
-  text-decoration-thickness: 3px;
+  /* border for WHCM */
+  border: 1px solid var(--tertiary);
 }
 
 time {
   display: flex;
   font-size: 80%;
+  font-weight: normal;
 }
 
 .visible-on-focus {
@@ -65,8 +67,9 @@ time {
 .name {
   color: var(--base);
   font-size: 3rem;
-  text-decoration: none;
-  font-weight: 400;
+  text-decoration: transparent;
+  font-weight: 800;
+  border: none;
 }
 
 .skip-link {
@@ -76,12 +79,16 @@ time {
 #external-links {
   display: flex;
   list-style: none;
-  padding: 0px;
-  margin-top: 0px;
+  padding-left: 0;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 #external-links li {
   margin-right: 10px;
+}
+
+.intro-paragraph {
 }
 
 .article {
@@ -92,17 +99,18 @@ time {
 }
 
 #article-list {
-  padding-left: 15px;
+  padding-left: 14px;
   margin-bottom: 30px;
   margin-top: 30px;
+  list-style-type: square;
 }
 
 #article-list li {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .article-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -122,6 +130,8 @@ time {
 
   header {
     margin-top: 70px;
+    border-top: 4px solid var(--base);
+    border-right: 6px solid var(--secondary);
   }
 
   #article-list {
