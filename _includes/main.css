@@ -43,8 +43,9 @@ a:focus-visible {
 
 time {
   display: flex;
-  font-size: 80%;
+  font-size: 90%;
   font-weight: normal;
+  margin: 0;
 }
 
 .visible-on-focus {
@@ -64,7 +65,7 @@ time {
   left: auto;
 }
 
-.name {
+.site-name {
   color: var(--base);
   font-size: 3rem;
   text-decoration: transparent;
