@@ -7,7 +7,7 @@ tags: ["post"]
 
 This is a pragmatic accessibility verification checklist for working developers (and potentially designers who code). It's not 100% bullet proof or holistic, but should be enough to ensure most users with impairments can access and use your website, webpage, component, whatever.
 
-The issues below are divided into Critical, Serious and Moderate severity tags to help with backlog prioritization. The tags can be understood in the following ways:
+The issues below are divided into three severity tags to help with backlog prioritization. The tags can be understood in the following ways:
 
 -   [Severity 1] issues represent major and insurmountable accessibility barriers for certain users. These issues can make our experiences and UI components totally unusable or impossible to understand.
 
