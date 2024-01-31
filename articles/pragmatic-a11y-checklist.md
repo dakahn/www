@@ -27,11 +27,9 @@ The issues below are divided into three severity tags to help with backlog prior
 
 5. [Severity 1] All form inputs have explicit labeling and are associated programmatically with all instructions using one of the following techniques:
 
-    - Explicitly by wrapping the input in a <label> element
+    - Implicitly by programmatically linking label/input sibling elements with the `for` attribute.
 
-    - Implicitly by programmatically linking label/input sibling elements with for or aria-labelledby
-
-    - With ARIA using aria-label. 🚨Warning🚨 aria-label should only be used when there is no visible label available
+    - With ARIA using `aria-labelledby` or `aria-label`. 🚨Warning🚨 aria-label should only be used when there is no visible label available
 
 6. [Severity 1] No visually present text or page elements have an aria-hidden attribute
 
