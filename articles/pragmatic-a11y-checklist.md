@@ -27,7 +27,7 @@ The issues below are divided into three severity tags to help with backlog prior
 
 5. [Severity 1] All form inputs have explicit labeling and are associated programmatically with all instructions using one of the following techniques:
 
-    - Implicitly by programmatically linking label/input sibling elements with the `for` attribute.
+    - Programmatically linking label/input sibling elements with the `for` attribute and a corresponding ID.
 
     - With ARIA using `aria-labelledby` or `aria-label`. 🚨Warning🚨 aria-label should only be used when there is no visible label available
 
