@@ -1,15 +1,20 @@
 :root {
-  --background: #1a1d21;
+  --background: #303030;
   --base: #d1d2d3;
-  --tertiary: #74fae4;
+  --tertiary: #23908f;
   --secondary: #f84e52;
+  --sm-font-size: 90%;
+  --md-font-size: 100%;
+  --lg-font-size: 175%;
+  --xl-font-size: 275%;
+  --font-weight: 600;
   font-size: calc(0.2vw + 0.1vh + 1em);
   display: flex;
   justify-content: center;
 }
 
 footer {
-  font-size: 90%;
+  font-size: var(--sm-font-size);
   margin-top: 60px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -21,7 +26,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
-  /* text-rendering: optimizeLegibility; */
+  text-rendering: optimizeLegibility;
   max-width: 95vw;
   overflow-y: scroll;
 }
@@ -41,8 +46,7 @@ a:focus-visible {
 
 time {
   display: flex;
-  font-size: 90%;
-  font-weight: normal;
+  font-size: var(--sm-font-size);
   margin: 0;
 }
 
@@ -65,14 +69,26 @@ time {
 
 .site-name {
   color: var(--base);
-  font-size: 3rem;
+  font-size: var(--xl-font-size);
+  font-weight: var(--font-weight);
   text-decoration: transparent;
-  font-weight: 800;
+  text-shadow: 6px 6px var(--secondary), 5.75px 5.75px var(--secondary),
+    5.5px 5.5px var(--secondary), 5.25px 5.25px var(--secondary),
+    5px 5px var(--secondary), 4.75px 4.75px var(--secondary),
+    4.5px 4.5px var(--secondary), 4.25px 4.25px var(--secondary),
+    4px 4px var(--secondary), 3.75px 3.75px var(--secondary),
+    3.5px 3.5px var(--secondary), 3.25px 3.25px var(--secondary),
+    3px 3px var(--secondary), 2.75px 2.75px var(--secondary),
+    2.5px 2.5px var(--secondary), 2.25px 2.25px var(--secondary),
+    2px 2px var(--secondary), 1.75px 1.75px var(--secondary),
+    1.5px 1.5px var(--secondary), 1.25px 1.25px var(--secondary),
+    1px 1px var(--secondary), 0.75px 0.75px var(--secondary),
+    0.5px 0.5px var(--secondary), 0.25px 0.25px var(--secondary);
   border: none;
 }
 
 .skip-link {
-  font-size: 90%;
+  font-size: var(--sm-font-size);
   margin-top: 10px;
 }
 
@@ -80,29 +96,26 @@ time {
   display: flex;
   list-style: none;
   padding-left: 0;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-bottom: 20px;
+  font-size: var(--sm-font-size);
 }
 
 #external-links li {
   margin-right: 10px;
 }
 
-.intro-paragraph {
-}
-
 .article {
   display: flex;
   flex-direction: column;
   color: var(--secondary);
-  font-size: 1rem;
+  font-size: var(--md-font-size);
 }
 
 #article-list {
   padding-left: 14px;
   margin-bottom: 30px;
   margin-top: 30px;
-  list-style-type: square;
 }
 
 #article-list li {
@@ -110,7 +123,9 @@ time {
 }
 
 .article-title {
-  font-size: 2rem;
+  font-size: var(--lg-font-size);
+  font-weight: var(--font-weight);
+  margin-top: 1rem;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -130,8 +145,6 @@ time {
 
   header {
     margin-top: 70px;
-    border-top: 4px solid var(--base);
-    border-right: 6px solid var(--secondary);
   }
 
   #article-list {
