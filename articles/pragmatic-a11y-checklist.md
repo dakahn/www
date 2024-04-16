@@ -6,11 +6,11 @@ tags: ["post"]
 ---
 [updated April 2024]
 
-_This is a pragmatic accessibility verification testing tool for working developers (and potentially designers who code). It's not 100% bullet proof or holistic, but should is intended to be enough to somewhat guarantee most users with impairments can access and use your website, webpage, component, whatever. Ideally would live close to where code is submitted and even potentially a part of your pull request/merge request flow._
+_This is a pragmatic accessibility verification testing tool for working developers (and potentially designers who code). It's not 100% bullet proof or holistic, but is intended to be enough to mostly guarantee most users with impairments can access and use your website at least to some satisfactory degree. This ideally would live close to where code is submitted and even potentially a part of your pull request/merge request flow, but your mileage may vary._
 
 --- 
 
-The issues on this list are considered supplemental and superseded by automated accessibility testing. Prior to completing this checklist the developer should confirm that no new errors are found when scanning with the axe DevTools browser extension. Axe violations are considered [Critical] errors and must be addressed before merging to master. Please reach out to the #accessibility channel on Slack with questions, comments, contributions or for assistance.
+The issues on this list are considered supplemental and superseded by automated accessibility testing. Prior to completing this checklist the developer should confirm that no new errors are found when scanning with the axe DevTools browser extension. Axe violations are considered Critical errors and must be addressed before merging to master.
 
 The issues below are divided into Critical, Serious and Moderate severity tags to help with backlog prioritization, but all work should comply with each list item (or have an approved exemption) before developers merge to master. The tags can be understood in the following ways:
 
