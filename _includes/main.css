@@ -1,8 +1,8 @@
 :root {
   --background: #303030;
   --base: #d1d2d3;
-  --secondary: #f84e52;
-  --tertiary: #008dd5;
+  --secondary: #B49ACC;
+  --tertiary: #DBFE87;
   --sm-font-size: 90%;
   --md-font-size: 100%;
   --lg-font-size: 175%;
@@ -42,6 +42,7 @@ a:focus-visible {
   outline: none;
   /* border for WHCM */
   border: 1px solid var(--tertiary);
+  text-shadow: none;
 }
 
 time {
@@ -71,7 +72,7 @@ time {
   color: var(--base);
   font-size: var(--xl-font-size);
   font-weight: var(--font-weight);
-  text-decoration: transparent;
+  text-decoration: none;
   text-shadow: 6px 6px var(--secondary), 5.75px 5.75px var(--secondary),
     5.5px 5.5px var(--secondary), 5.25px 5.25px var(--secondary),
     5px 5px var(--secondary), 4.75px 4.75px var(--secondary),
@@ -85,6 +86,10 @@ time {
     1px 1px var(--secondary), 0.75px 0.75px var(--secondary),
     0.5px 0.5px var(--secondary), 0.25px 0.25px var(--secondary);
   border: none;
+}
+
+.site-name:focus {
+  text-decoration: underline;
 }
 
 .skip-link {
