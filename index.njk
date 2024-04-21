@@ -38,11 +38,11 @@ pagination:
         <li>
           <article>
             <h2 class="article">
-              <a class="index-article-title" href="{{ post.url | url }}">
+              <a aria-describedby="{{ post.url }}"class="index-article-title" href="{{ post.url | url }}">
                 {{ post.data.title }}
               </a>
-              <time>{{ post.date | dateReadable }}</time>
             </h2>
+	    <time id="{{ post.url }}">{{ post.date | dateReadable }}</time>
           </article>
         </li>
         {% endfor %}

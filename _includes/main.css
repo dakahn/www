@@ -1,8 +1,8 @@
 :root {
   --background: #303030;
   --base: #d1d2d3;
-  --secondary: #b49acc;
-  --tertiary: #dbfe87;
+  --secondary: #B49ACC;
+  --tertiary: #DBFE87;
   --sm-font-size: 90%;
   --md-font-size: 100%;
   --lg-font-size: 175%;
@@ -46,7 +46,6 @@ a:focus-visible {
 }
 
 time {
-  display: flex;
   font-size: var(--sm-font-size);
   margin: 0;
 }
