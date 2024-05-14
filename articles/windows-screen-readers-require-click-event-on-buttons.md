@@ -38,7 +38,9 @@ plus <kbd>Enter</kbd> is because adding the modifier forces the screen reader
 into Focus/Forms mode (for NVDA/JAWS respectively) which passes _all keypresses_
 onto the browser. Think of this mode like typing a paragraph or two into a textbox. You wouldn't
 want an <kbd>Enter</kbd> keypress to send the form off to the server. You probably want a
-newline and to be able to continue typing.
+newline and to be able to continue typing. There is way more depth and nuance to
+how these modes interplay and when they are and aren't activated I wont detail
+here, but [here's some further reading by the ADG](https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes/) that describes those interactions much more in depth.
 
 Moving forward all Button components will require an `onClick` event listener by
 default.
