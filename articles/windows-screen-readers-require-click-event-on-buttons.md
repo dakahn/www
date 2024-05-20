@@ -51,3 +51,7 @@ _\* a user in this Github thread suggests that the developer could utilize
 mode, but this is a pretty bad idea because while it would fix the bug, any and all other keyboard functionality
 would have to be fully re-implemented in JavaScript--for example tabbing between
 interactive elements inside the `role="application"` container._
+
+## TLDR
+
+Windows screen readers send a synthetic click event to the browser to activate buttons. They do not send a keypress of anykind by default (but will in Forms/Focus mode). So if your button doesn’t have an `onClick` event listener it will be essentially inoperable. This differs from macOS screen reader which send both events. The reason this is interesting is because it seems to be completely undocumented behavior. there are likely countless buttons in JS and non-JS based websites all over the web that are totally inaccessible to Windows screen reader users for this exact reason. 
