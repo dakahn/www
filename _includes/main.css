@@ -1,16 +1,43 @@
-:root {
-  --background: #303030;
-  --base: #d1d2d3;
-  --secondary: #B49ACC;
-  --tertiary: #DBFE87;
-  --sm-font-size: 90%;
-  --md-font-size: 100%;
-  --lg-font-size: 175%;
-  --xl-font-size: 275%;
-  --font-weight: 600;
-  font-size: calc(0.2vw + 0.1vh + 1em);
-  display: flex;
-  justify-content: center;
+@layer reset, theme
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+@layer theme {
+  :root {
+    --background: #303030;
+    --base: #d1d2d3;
+    --secondary: #b49acc;
+    --tertiary: #dbfe87;
+    --sm-font-size: 90%;
+    --md-font-size: 100%;
+    --lg-font-size: 175%;
+    --xl-font-size: 275%;
+    --font-weight: 600;
+    font-size: calc(0.2vw + 0.1vh + 1em);
+    display: flex;
+    justify-content: center;
+  }
 }
 
 footer {
