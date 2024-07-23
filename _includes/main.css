@@ -98,6 +98,7 @@ time {
   color: var(--base);
   font-size: var(--xl-font-size);
   text-decoration: none;
+  font-weight: var(--font-weight);
   border: none;
 }
 
