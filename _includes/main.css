@@ -11,7 +11,6 @@
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
   }
 
   a:not([class]) {
@@ -27,8 +26,8 @@
   :root {
     --background: #303030;
     --base: #d1d2d3;
-    --secondary: #b49acc;
-    --tertiary: #dbfe87;
+    --secondary: #dbfe87;
+    --tertiary: #b49acc;
     --sm-font-size: 90%;
     --md-font-size: 100%;
     --lg-font-size: 175%;
