@@ -24,10 +24,10 @@
 
 @layer theme {
   :root {
-    --background: #303030;
+    --background: #000000;
     --base: #d1d2d3;
-    --secondary: #dbfe87;
-    --tertiary: #b49acc;
+    --secondary: #00BFFF;
+    --tertiary: #00FF7F;
     --sm-font-size: 90%;
     --md-font-size: 100%;
     --lg-font-size: 175%;
@@ -143,6 +143,7 @@ time {
   font-size: var(--lg-font-size);
   font-weight: var(--font-weight);
   margin-top: 1rem;
+  line-height: 1.25;
 }
 
 .sr-only:not(:focus):not(:active) {
