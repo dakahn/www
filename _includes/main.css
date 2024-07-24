@@ -25,8 +25,8 @@
 @layer theme {
   :root {
     --background: #000000;
-    --base: #d1d2d3;
-    --secondary: #00BFFF;
+    --base: #dcdcdc;
+    --secondary: #00bfff;
     --tertiary: #dbfe87;
     --sm-font-size: 90%;
     --md-font-size: 100%;
@@ -49,6 +49,7 @@ footer {
 body {
   background-color: var(--background);
   color: var(--base);
+  padding: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
@@ -69,6 +70,7 @@ a:focus-visible {
   /* border for WHCM */
   border: 1px solid var(--tertiary);
   text-shadow: none;
+  text-decoration: none;
 }
 
 time {
@@ -130,13 +132,16 @@ time {
 }
 
 #article-list {
-  padding-left: 14px;
+  padding-left: 0rem;
   margin-bottom: 30px;
   margin-top: 30px;
+  list-style: none;
 }
 
 #article-list li {
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
+  padding-left: 10px;
+  border-left: solid 1px var(--secondary);
 }
 
 .article-title {
@@ -163,9 +168,5 @@ time {
 
   header {
     margin-top: 70px;
-  }
-
-  #article-list {
-    padding-left: 0px;
   }
 }
