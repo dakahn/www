@@ -24,10 +24,11 @@
 
 @layer theme {
   :root {
-    --background: #120321;
-    --base: #dcdcdc;
-    --secondary: #fd94b4;
+    --background: rgb(221, 46, 66);
+    --base: rgb(0, 0, 0);
+    --secondary: rgb(0, 0, 0);
     --tertiary: #fdfdcb;
+    --focused-text: rgb(255, 255, 255);
     --sm-font-size: 90%;
     --md-font-size: 100%;
     --lg-font-size: 175%;
@@ -60,17 +61,21 @@ body {
 
 a {
   color: var(--secondary);
-  border: 1px solid transparent;
 }
 
 a:focus-visible {
-  background-color: var(--tertiary);
-  color: var(--background);
+  color: var(--focused-text);
   outline: none;
-  /* border for WHCM */
-  border: 1px solid var(--tertiary);
   text-shadow: none;
-  text-decoration: none;
+}
+
+a:hover {
+  color: var(--focused-text);
+}
+
+.intro-paragraph {
+  font-size: var(--sm-font-size);
+  margin-bottom: 3rem;
 }
 
 time {
@@ -99,26 +104,40 @@ time {
   color: var(--base);
   font-size: var(--xl-font-size);
   text-decoration: none;
-  font-weight: var(--font-weight);
+  font-weight: normal;
   border: none;
 }
 
-.site-name:focus-visible {
+.site-name-article {
+  color: var(--base);
+  font-size: var(--lg-font-size);
+  text-decoration: none;
+  font-weight: normal;
+  border: none;
+}
+
+.site-name-article:focus-visible {
+  text-decoration: underline;
+}
+
+.site-name-article:hover {
   text-decoration: underline;
 }
 
 .skip-link {
   font-size: var(--sm-font-size);
   margin-top: 10px;
+  font-weight: var(--font-weight);
 }
 
 #external-links {
   display: flex;
   list-style: none;
   padding-left: 0;
-  margin-top: -5px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: var(--sm-font-size);
+  font-weight: var(--font-weight);
 }
 
 #external-links li {
@@ -127,21 +146,21 @@ time {
 
 .article {
   flex-direction: column;
-  color: var(--secondary);
   font-size: var(--md-font-size);
 }
 
 #article-list {
   padding-left: 0rem;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 35px;
   list-style: none;
 }
 
 #article-list li {
   margin-bottom: 1.5rem;
+  border-bottom: 5px solid black;
+  border-left: 3px solid black;
   padding-left: 10px;
-  border-left: solid 1px var(--secondary);
+  padding-bottom: 10px;
 }
 
 .article-title {
