@@ -21,19 +21,14 @@ pagination:
   <body>
     <a href="#main" class="skip-link visible-on-focus">Skip to content</a>
     <header>
-      <h1 class="site-name">@dakahn</h1>
-      <ul id="external-links" aria-label="external links">
-        <li><a class="external-link" href="https://github.com/dakahn">Github</a></li>
-        <li><a class="external-link" href="https://www.linkedin.com/in/dakahn87/">Linkedin</a></li>
-        <li><a class="external-link" href="https://mastodon.social/@dakahn">Mastodon</a></li>
-      </ul>
+      <h1 class="site-name sr-only">The blog of D.A. Kahn</h1>
+      <p class="intro-paragraph">
+      My name is <strong>D.A. Kahn</strong>. I'm a digital accessibility consultant helping
+      teams and organizations create and maintain digital experiences that meet
+      the needs of users across the ability spectrum. Δ
+      </p>
     </header>
     <main id="main">
-      <p class="intro-paragraph">
-      My name is D.A. Kahn. I'm a digital accessibility consultant helping
-      teams and organizations create and maintain digital experiences that meet
-      the needs of users across the ability spectrum.
-      </p>
       <ol id="article-list">
         {% for post in posts %}
         <li>
@@ -51,6 +46,11 @@ pagination:
     </main>
   </body>
   <footer>
+      <ul id="external-links" aria-label="external links">
+        <li><a class="external-link" href="https://github.com/dakahn">Github</a></li>
+        <li><a class="external-link" href="https://www.linkedin.com/in/dakahn87/">Linkedin</a></li>
+        <li><a class="external-link" href="https://mastodon.social/@dakahn">Mastodon</a></li>
+      </ul>
     © 2023-2025 D.A. Kahn
   </footer>
 </html>

@@ -27,18 +27,18 @@
     --background: rgb(40, 46, 46);
     --base: rgb(220, 225, 206);
     --secondary: rgb(220, 225, 206);
-    --tertiary: rgb(255, 94, 21);
-    --focused-text: rgb(255, 94, 21);
+    --tertiary: rgb(255, 2, 102);
+    --focused-text: rgb(255, 2, 102);
     --sm-font-size: 90%;
     --md-font-size: 100%;
-    --lg-font-size: 175%;
-    --xl-font-size: 275%;
-    --font-weight: 600;
+    --lg-font-size: 135%;
+    --xl-font-size: 175%;
+    --xxl-font-size: 275%;
     --border-color: rgb(220, 225, 206);
     font-size: calc(0.2vw + 0.1vh + 1.25em);
     display: flex;
     padding: 1rem;
-    line-height: 1.6;
+    border: 5px solid rgb(255, 2, 102);
   }
 }
 
@@ -75,8 +75,10 @@ a:hover {
 }
 
 .intro-paragraph {
-  font-size: var(--sm-font-size);
-  margin-bottom: 3rem;
+  font-size: var(--lg-font-size);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.25;
 }
 
 time {
@@ -103,16 +105,15 @@ time {
 
 .site-name {
   color: var(--base);
-  font-size: var(--xl-font-size);
+  font-size: var(--xxl-font-size);
   text-decoration: none;
   font-weight: normal;
   border: none;
 }
 
-.site-name-article {
+.back-to-home {
   color: var(--base);
-  font-size: var(--lg-font-size);
-  text-decoration: none;
+  font-size: var(--md-font-size);
   font-weight: normal;
   border: none;
 }
@@ -128,7 +129,7 @@ time {
 .skip-link {
   font-size: var(--sm-font-size);
   margin-top: 10px;
-  font-weight: var(--font-weight);
+  font-weight: 600;
 }
 
 #external-links {
@@ -136,9 +137,8 @@ time {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 10px;
   font-size: var(--sm-font-size);
-  font-weight: var(--font-weight);
+  font-weight: 600;
 }
 
 #external-links li {
@@ -162,8 +162,8 @@ time {
 }
 
 .article-title {
-  font-size: var(--lg-font-size);
-  font-weight: var(--font-weight);
+  font-size: var(--xl-font-size);
+  font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   line-height: 1.25;
@@ -180,11 +180,16 @@ time {
 }
 
 @media only screen and (min-width: 60rem) {
-  body {
+  main {
     max-width: 680px;
+  }
+  .intro-paragraph {
+    font-size: var(--xxl-font-size);
+    margin-bottom: 4rem;
   }
 
   header {
-    margin-top: 105px;
+    margin-top: 70px;
+    max-width: 1700px;
   }
 }
