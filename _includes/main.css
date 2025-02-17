@@ -24,19 +24,21 @@
 
 @layer theme {
   :root {
-    --background: rgb(221, 46, 66);
-    --base: rgb(0, 0, 0);
-    --secondary: rgb(0, 0, 0);
-    --tertiary: #fdfdcb;
-    --focused-text: rgb(255, 255, 255);
+    --background: rgb(40, 46, 46);
+    --base: rgb(220, 225, 206);
+    --secondary: rgb(220, 225, 206);
+    --tertiary: rgb(255, 94, 21);
+    --focused-text: rgb(255, 94, 21);
     --sm-font-size: 90%;
     --md-font-size: 100%;
     --lg-font-size: 175%;
     --xl-font-size: 275%;
     --font-weight: 600;
+    --border-color: rgb(220, 225, 206);
     font-size: calc(0.2vw + 0.1vh + 1.25em);
     display: flex;
-    justify-content: center;
+    padding: 1rem;
+    line-height: 1.6;
   }
 }
 
@@ -50,7 +52,6 @@ footer {
 body {
   background-color: var(--background);
   color: var(--base);
-  padding: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
@@ -156,10 +157,7 @@ time {
 }
 
 #article-list li {
-  margin-bottom: 1.5rem;
-  border-bottom: 5px solid black;
-  border-left: 3px solid black;
-  padding-left: 10px;
+  margin-bottom: 1rem;
   padding-bottom: 10px;
 }
 
@@ -167,6 +165,7 @@ time {
   font-size: var(--lg-font-size);
   font-weight: var(--font-weight);
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.25;
 }
 
@@ -186,6 +185,6 @@ time {
   }
 
   header {
-    margin-top: 70px;
+    margin-top: 105px;
   }
 }
