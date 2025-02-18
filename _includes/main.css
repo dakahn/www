@@ -29,6 +29,7 @@
     --secondary: rgb(220, 225, 206);
     --tertiary: rgb(255, 2, 102);
     --focused-text: rgb(255, 2, 102);
+    --xsm-font-size: 75%;
     --sm-font-size: 90%;
     --md-font-size: 100%;
     --lg-font-size: 135%;
@@ -45,8 +46,6 @@
 footer {
   font-size: var(--sm-font-size);
   margin-top: 60px;
-  margin-bottom: 10px;
-  padding-top: 10px;
 }
 
 body {
@@ -118,6 +117,13 @@ time {
   border: none;
 }
 
+.long-description {
+  font-size: var(--xsm-font-size);
+  line-height: 1.2;
+  font-style: italic;
+  margin-top: 0;
+}
+
 .site-name-article:focus-visible {
   text-decoration: underline;
 }
@@ -128,7 +134,7 @@ time {
 
 .skip-link {
   font-size: var(--sm-font-size);
-  margin-top: 10px;
+  margin-top: 1rem;
   font-weight: 600;
 }
 

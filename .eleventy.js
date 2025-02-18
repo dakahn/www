@@ -2,6 +2,7 @@ const moment = require("moment");
 const CleanCSS = require("clean-css");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { DateTime } = require("luxon");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 moment.locale("en");
 
@@ -29,4 +30,5 @@ module.exports = function (eleventyConfig) {
   const markdownLib = markdownIt({ html: true }).use(markdownItAnchor);
 
   eleventyConfig.setLibrary("md", markdownLib);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 };
