@@ -38,14 +38,13 @@
     --border-color: rgb(220, 225, 206);
     font-size: calc(0.2vw + 0.1vh + 1.25em);
     display: flex;
-    padding: 1rem;
     border: 5px solid rgb(255, 2, 102);
   }
 }
 
 footer {
+  margin-top: 4rem;
   font-size: var(--sm-font-size);
-  margin-top: 60px;
 }
 
 body {
@@ -75,14 +74,11 @@ a:hover {
 
 .intro-paragraph {
   font-size: var(--lg-font-size);
-  margin-top: 1rem;
-  margin-bottom: 2rem;
   line-height: 1.25;
 }
 
 time {
   font-size: var(--sm-font-size);
-  margin: 0;
 }
 
 .visible-on-focus {
@@ -120,7 +116,6 @@ time {
 .long-description {
   font-size: var(--xsm-font-size);
   line-height: 1.2;
-  font-style: italic;
   margin-top: 0;
 }
 
@@ -134,7 +129,6 @@ time {
 
 .skip-link {
   font-size: var(--sm-font-size);
-  margin-top: 1rem;
   font-weight: 600;
 }
 
@@ -142,7 +136,6 @@ time {
   display: flex;
   list-style: none;
   padding-left: 0;
-  margin-top: 0;
   font-size: var(--sm-font-size);
   font-weight: 600;
 }
@@ -158,20 +151,17 @@ time {
 
 #article-list {
   padding-left: 0rem;
-  margin-bottom: 35px;
   list-style: none;
 }
 
 #article-list li {
-  margin-bottom: 1rem;
-  padding-bottom: 10px;
+  margin-bottom: 1.5rem;
 }
 
 .article-title {
   font-size: var(--xl-font-size);
   font-weight: 600;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
   line-height: 1.25;
 }
 
@@ -191,11 +181,15 @@ time {
   }
   .intro-paragraph {
     font-size: var(--xxl-font-size);
+    margin-top: 2rem;
     margin-bottom: 4rem;
   }
 
+  body {
+    padding: 2rem;
+  }
+
   header {
-    margin-top: 70px;
     max-width: 1700px;
   }
 }
